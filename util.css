@@ -1,0 +1,255 @@
+:root {
+  --red-medium-shade: #ff6263;
+  --dark-shade: #484848;
+  --dark-light-shade: #d8d8d8;
+  --red-dark-shade: #e64748;
+  --violet-dark-shade: #aa47e6;
+  --blue-dark-shade: #47a8e6;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 600;
+}
+h3 {
+  font-weight: 500;
+}
+h4 {
+  font-weight: 400;
+}
+.active-link {
+  color: var(--red-medium-shade);
+}
+.dark {
+  color: var(--dark-shade);
+}
+.red {
+  color: var(--red-medium-shade);
+}
+.white {
+  color: white;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.dark-red {
+  color: var(--red-dark-shade);
+}
+.icon {
+  font-size: 22px;
+  color: var(--dark-shade);
+  transition: 0.25s;
+}
+.icon:hover {
+  color: var(--red-medium-shade);
+}
+
+.typing-AWEB::after {
+  content: "A WEB ";
+  animation: typerAWEB 2s;
+  animation-iteration-count: 1;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 90px;
+}
+.typing-DEVELOPER::after {
+  content: "DEVELOPER ";
+  animation: typerDEVELOPER 2s;
+  animation-iteration-count: 1;
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 700;
+}
+.color-animation {
+  animation: mymove 25s;
+  animation-iteration-count: infinite;
+}
+.box {
+  width: 90%;
+  padding: 25px 5%;
+  margin-top: 70px;
+  min-height: calc(100vh - 70px - 50px);
+  height: 100%;
+  background-color: white;
+}
+.animation-box {
+  width: 20px;
+  height: 100px;
+  background-color: var(--dark-light-shade);
+  position: absolute;
+  left: 35px;
+  top: 200px;
+  animation: boxanimtion 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.vertical {
+  transform: translateX(-15%) rotate(-90deg);
+  z-index: 1;
+  position: absolute;
+  left: 0px;
+  top: 200px;
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+.cross-icon {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  right: 5vw;
+  margin-top: -5vh;
+}
+footer {
+  width: 90%;
+  height: calc(100vh - 70px - 100px);
+  background-color: var(--dark-shade);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 5%;
+}
+.email-input {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+}
+.message-input {
+  width: 100%;
+  padding: 5px;
+  height: 200px;
+  outline: none;
+  resize: none;
+}
+.send-button {
+  width: 40%;
+  padding: 5px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: var(--red-medium-shade);
+  border: none;
+  color: white;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.send-button:hover {
+  background-color: var(--red-dark-shade);
+}
+.footer-item {
+  width: 40%;
+  height: 400px;
+  justify-content: space-between;
+}
+.center {
+  justify-content: center;
+}
+.footer-link {
+  color: white;
+  transition: 0.25s;
+  text-decoration: none;
+  width: 100%;
+}
+.footer-nav-links {
+  margin: 20px auto;
+  justify-content: center;
+  width:80%;
+}
+.footer-link:hover {
+  color: var(--red-dark-shade);
+}
+.line {
+  width: 2px;
+  height: 400px;
+  background-color: white;
+}
+
+@keyframes boxanimtion {
+  0% {
+    top: 170px;
+  }
+  50% {
+    top: 200px;
+  }
+  100% {
+    top: 170px;
+  }
+}
+@keyframes typerAWEB {
+  0% {
+    content: "|";
+  }
+  15% {
+    content: "A|";
+  }
+  30% {
+    content: "A |";
+  }
+  45% {
+    content: "A W|";
+  }
+  60% {
+    content: "A WE|";
+  }
+  75% {
+    content: "A WEB|";
+  }
+  100% {
+    content: "A WEB |";
+  }
+}
+@keyframes typerDEVELOPER {
+  0% {
+    content: "EGYIQUWMA";
+  }
+  10% {
+    content: "DFXHPTVLZ";
+  }
+  20% {
+    content: "DEWGOSUKY";
+  }
+  30% {
+    content: "DEVFNRTJX";
+  }
+  40% {
+    content: "DEVEMQSIW";
+  }
+  50% {
+    content: "DEVELPRHV";
+  }
+  60% {
+    content: "DEVELOQGU";
+  }
+  70% {
+    content: "DEVELOPFT";
+  }
+  80% {
+    content: "DEVELOPES";
+  }
+  90% {
+    content: "DEVELOPER";
+  }
+  100% {
+    content: "DEVELOPER";
+  }
+}
+@keyframes mymove {
+  0% {
+    color: var(--red-dark-shade);
+  }
+  25% {
+    color: var(--violet-dark-shade);
+  }
+  50% {
+    color: var(--blue-dark-shade);
+  }
+  75% {
+    color: var(--violet-dark-shade);
+  }
+  100% {
+    color: var(--red-dark-shade);
+  }
+}

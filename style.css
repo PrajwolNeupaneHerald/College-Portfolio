@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --red-medium-shade: #ff6263;
+  --dark-shade: #484848;
+  --dark-light-shade: #d8d8d8;
+  --red-dark-shade: #e64748;
+  --violet-dark-shade: #aa47e6;
+  --blue-dark-shade:#47A8E6;
+}
+nav {
+  width: 90%;
+  display: flex;
+  padding: 0px 5%;
+  height: 70px;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+}
+.nav-links-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  font-size: 14px;
+}
+.nav-h1 {
+  font-size: 40px;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--dark-shade);
+  transition: 0.5s;
+}
+.nav-link:active {
+  color: var(--red-medium-shade);
+}
+.nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.25s;
+  text-align: center;
+}
+.nav-link:hover::after {
+  width: 80%;
+}
+.home-box {
+  margin-top: 70px;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.image-container {
+  width: 30vw;
+  height: 100vh;
+  background-color: var(--dark-light-shade);
+  position: fixed;
+  right: 0px;
+  background-image: url("./media/Web_Developer_BG.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: -120px;
+  background-blend-mode: hard-light;
+}
+.image-container img {
+  z-index: 2;
+  width: 600px;
+  margin: -50% -83%;
+  transform: translateY(80px);
+}
+.content-box {
+  height: 100%;
+  width: 70%;
+}
+.home-content {
+  height: 50%;
+  background-color: white;
+  margin: 25% 5vw;
+  justify-content: end;
+}
+.about-content {
+  height: 90%;
+  background-color: white;
+  margin: 5% 5vw;
+  gap: 100px;
+}
+.intro {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 60px;
+}
+.intro-name {
+  font-size: 30px;
+  line-height: 30px;
+}
+.head {
+  font-size: 98px;
+  line-height: 98px;
+}
+.about-text {
+  width: 70%;
+}
+.media-links {
+  width: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper{
+    margin-top: 110vh;
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+
+}
+.education-item{
+  margin: 25px 5%;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-shade);
+    z-index: 5;
+}
+
+
