@@ -90,13 +90,18 @@ h4 {
   animation-timing-function: ease-in-out;
 }
 .vertical {
-  transform: translateX(-15%) rotate(-90deg);
   z-index: 1;
   position: absolute;
   left: 0px;
   top: 200px;
   font-size: 14px;
   letter-spacing: 5px;
+}
+.educ{
+  transform: translateX(-15%) rotate(-90deg);
+}
+.skil{
+  transform: translateX(25%) rotate(-90deg);
 }
 .cross-icon {
   color: white;
@@ -165,6 +170,18 @@ footer {
   width: 2px;
   height: 400px;
   background-color: white;
+}
+.dot-image{
+  background-image: url('./media/dot-pattern.png');
+  width: 150px;
+  height: 260px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0px;
+  z-index: 0;
+  bottom: -20%;
 }
 
 @keyframes boxanimtion {

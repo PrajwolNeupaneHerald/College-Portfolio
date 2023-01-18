@@ -112,6 +112,29 @@ nav {
 .about-text {
   width: 70%;
 }
+table{
+  width: 70vw;
+  margin: 0px auto;
+}
+th{
+  background-color: white;
+  color:var(--dark-shade);
+}
+td{
+  background-color: white;
+  color:var(--dark-shade);
+  font-weight: 400;
+  text-align: center;
+}
+th{
+  font-size: 16px;
+}
+
+table,th,td{
+  border: 1px var(--dark-shade) solid;
+  border-collapse: collapse;
+  padding: 4px;
+}
 .media-links {
   width: 100px;
   align-items: center;
