@@ -49,21 +49,25 @@ h4 {
 .icon:hover {
   color: var(--red-medium-shade);
 }
-
+.typing-AWEB{
+  font-size: 90px;
+  line-height: 90px;
+}
 .typing-AWEB::after {
   content: "A WEB ";
   animation: typerAWEB 2s;
   animation-iteration-count: 1;
-  font-size: 90px;
   font-weight: 700;
+  line-height: 90px;
+}
+.typing-DEVELOPER{
+  font-size: 90px;
   line-height: 90px;
 }
 .typing-DEVELOPER::after {
   content: "DEVELOPER ";
   animation: typerDEVELOPER 2s;
   animation-iteration-count: 1;
-  font-size: 90px;
-  line-height: 90px;
   font-weight: 700;
 }
 .color-animation {
@@ -97,12 +101,30 @@ h4 {
   font-size: 14px;
   letter-spacing: 5px;
 }
-.educ{
+.educ {
   transform: translateX(-15%) rotate(-90deg);
 }
-.skil{
+.skil {
   transform: translateX(25%) rotate(-90deg);
 }
+.proj {
+  transform: translateX(-2%) rotate(-90deg);
+}
+.acti{
+  transform: translateX(-13%) rotate(-90deg);
+}
+.refe{
+  transform: translateX(-13%) rotate(-90deg);
+}
+.acti-icon{
+  font-size: 150px;
+  color: var(--red-dark-shade);
+  transition: .5s;
+}
+.activites-grid-item:hover .acti-icon{
+  color: var(--dark-shade);
+}
+
 .cross-icon {
   color: white;
   font-size: 40px;
@@ -144,6 +166,73 @@ footer {
 .send-button:hover {
   background-color: var(--red-dark-shade);
 }
+.grid {
+  display: grid;
+
+}
+.project-grid {
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 50px;
+  width: 95%;
+  margin: 25px auto;
+}
+.skill-grid{
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 50px;
+  width: 95%;
+  margin: 25px auto;
+}
+.skill-item {
+  padding: 10px;
+  background-color: var(--dark-light-shade);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.skill-item:hover {
+  background-color: var(--dark-shade);
+}
+.skill-item:hover .skill-name {
+  color: white;
+}
+.skil-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+.skill-name {
+  font-size: 18px;
+  transition: 0.5s;
+}
+.project-grid-item{
+  width: 350px;
+  transition: .5s;
+  cursor: pointer;
+}
+.project-grid-item:hover img{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.project-grid-item img{
+  width: 100%;
+  transition: .25s;
+}
+.project-grid-item  h4{
+  font-size: 18px;
+  text-align: center;
+}
+.activites-grid-item{
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
 .footer-item {
   width: 40%;
   height: 400px;
@@ -161,9 +250,9 @@ footer {
 .footer-nav-links {
   margin: 20px auto;
   justify-content: center;
-  width:80%;
+  width: 80%;
 }
-.footer-link:hover {
+.footer-link:hover {  
   color: var(--red-dark-shade);
 }
 .line {
@@ -171,8 +260,8 @@ footer {
   height: 400px;
   background-color: white;
 }
-.dot-image{
-  background-image: url('./media/dot-pattern.png');
+.dot-image {
+  background-image: url("./media/dot-pattern.png");
   width: 150px;
   height: 260px;
   background-position: center;
@@ -181,7 +270,7 @@ footer {
   position: absolute;
   right: 0px;
   z-index: 0;
-  bottom: -20%;
+  bottom: 0%;
 }
 
 @keyframes boxanimtion {

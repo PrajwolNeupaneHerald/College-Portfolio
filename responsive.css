@@ -1,0 +1,121 @@
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 0px 2%;
+    width: 96%;
+  }
+  .typing-AWEB {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .typing-DEVELOPER {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .skill-grid {
+    grid-template-columns: auto auto auto;
+  }
+  .project-grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .skill-grid {
+    gap: 5px;
+  }
+  .project-grid-item {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    height: 100px;
+    padding: 10px 0%;
+    width: 100%;
+  }
+  .nav-links-box {
+    gap: 12px;
+  }
+  .nav-link h3 {
+    font-size: 14px;
+  }
+  .home-content h3 {
+    font-size: 20px;
+  }
+  .typing-AWEB {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .typing-DEVELOPER {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .image-container {
+    display: none;
+  }
+  .about-content {
+    margin: 0% 5vw;
+  }
+  .about-text {
+    width: 150%;
+  }
+  .skill-grid {
+    grid-template-columns: auto auto;
+  }
+  .skill-item {
+    width: 150px;
+  }
+  .skill-item h3 {
+    font-size: 14px;
+  }
+  .project-grid {
+    grid-template-columns: auto;
+  }
+
+  .wrapper {
+    margin-top: 80vh;
+    height: calc(100vh - 120px);
+  }
+  .box {
+    margin-top: 110px;
+  }
+  .main {
+    height: calc(200vh - 120px - 100px);
+  }
+  .main div {
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+  }
+  .line {
+    display: none;
+  }
+  .footer-item {
+    width: 100%;
+  }
+  .animation-box {
+    display: none;
+  }
+  footer {
+    height: 200%;
+  }
+  .footer {
+    height: 200%;
+    z-index: 0;
+  }
+  .footer div {
+    flex-direction: column;
+  }
+  .acti,
+  .proj,
+  .skil,
+  .educ,
+  .refe {
+    display: none;
+  }
+  .color-animation {
+    font-size: 30px;
+  }
+}
