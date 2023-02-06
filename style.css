@@ -142,7 +142,19 @@ td {
   align-items: center;
   justify-content: space-between;
 }
-
+.project-flex{
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+.project-flex h3{
+  font-size: 22px;
+}
+.image-slider{
+  width: 90%;
+  height: 450px;
+  object-fit: cover;
+}
 .wrapper {
   margin-top: 110vh;
   width: 100%;

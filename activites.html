@@ -15,9 +15,10 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="util.css" />
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
+    
     <nav>
       <h1 class="nav-h1 color-animation">PN</h1>
       <div class="nav-links-box">
@@ -31,6 +32,7 @@
         <a href="refernces.html" class="nav-link"><h3>References</h3></a>
       </div>
     </nav>
+    <img name="slider" style="object-fit: cover;width: 60%;height: 200px;margin: 0px auto;"/>
     <div class="education box flex-column" id="activites">
       <div class="animation-box"></div>
       <h3 class="dark vertical acti">ACTIVITIES</h3>
@@ -38,19 +40,19 @@
       <div class="grid project-grid">
         <div class="activites-grid-item flex-column">
           <i class="fa-solid fa-guitar acti-icon"></i>
-          <h4 class="dark" style="font-size: 20px;">Playing Guitar</h4>
+          <h4 class="dark" style="font-size: 20px">Playing Guitar</h4>
         </div>
         <div class="activites-grid-item flex-column">
           <i class="fa-solid fa-headset acti-icon"></i>
-          <h4 class="dark" style="font-size: 20px;">Gaming</h4>
+          <h4 class="dark" style="font-size: 20px">Gaming</h4>
         </div>
         <div class="activites-grid-item flex-column">
           <i class="fa-solid fa-code acti-icon"></i>
-          <h4 class="dark" style="font-size: 20px;">Programming</h4>
+          <h4 class="dark" style="font-size: 20px">Programming</h4>
         </div>
         <div class="activites-grid-item flex-column">
           <i class="fa-solid fa-pen-to-square acti-icon"></i>
-          <h4 class="dark" style="font-size: 20px;">Desiginning</h4>
+          <h4 class="dark" style="font-size: 20px">Desiginning</h4>
         </div>
       </div>
       <div class="dot-image"></div>
@@ -62,10 +64,10 @@
         <div class="flex-row" style="justify-content: space-between">
           <div class="flex-column footer-item">
             <h3 class="white">Email :</h3>
-            <input class="email-input" />
+            <input class="email-input"  id="email"/>
             <h3 class="white">Message :</h3>
-            <textarea class="message-input"> </textarea>
-            <button class="send-button">Send</button>
+            <textarea class="message-input" id="message"></textarea>
+            <button class="send-button"  onclick="onClick()">Send</button>
           </div>
           <div class="line"></div>
           <div class="flex-column footer-item center">
@@ -115,4 +117,5 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
